@@ -1,5 +1,7 @@
 # Eppsjt's Layout
 
+Build: make lets_split/rev2:eppsjt
+
 ## Layers
 
 ### QWERTY
@@ -11,6 +13,7 @@
 ### LOWER
 
 - Contains F keys and symbols
+- KC_TAB is changed to KC_ENT to accommodate better left hand only use cases
 
 ### RAISE
 
@@ -19,6 +22,7 @@
 ### MEDIA
 
 - Media keys as well as miscellaneious shortcuts
+- KC_TAB is changed to KC_BKSP to accommodate better left hand only use cases
 
 ### FUNCTIONS
 
