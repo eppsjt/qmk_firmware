@@ -12,7 +12,9 @@ Build: make lets_split/rev2:eppsjt
 
 ### LOWER
 
-- Contains F keys and symbols
+- More coding friendly layout
+  - Symbols moved to home row
+  - Parenthesis moved to use index/middle finger rather than ring/pinky.
 - KC_TAB is changed to KC_ENT to accommodate better left hand only use cases
 
 ### RAISE
