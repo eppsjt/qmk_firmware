@@ -60,14 +60,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |*Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Enter*|
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Ctrl | Alt  | Media| Super| Lower|    Space    | Raise| Left | Down |  Up  |Right |
+ * | Ctrl | Alt  | Media| Space| Lower| Super| Space| Raise| Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT_ortho_4x12(
     KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
     KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
     SFT_CAP, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_ENT,
-    KC_LCTL, KC_LALT, MEDIA,KC_LGUI,   LOWER,   KC_SPC,  KC_SPC,  RAISE,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+    KC_LCTL, KC_LALT, MEDIA, KC_SPC,   LOWER, KC_LGUI,  KC_SPC,   RAISE,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
 ),
 
 /* LOWER
@@ -78,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      | NULL | NULL | NULL | NULL | NULL | NULL |   (  |   )  |   _  |   +  |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      |      |      |      |             |      | Home | PgDwn| PgUp | End  |
+ * |      |      |      |      |      |      |      |      | Home | PgDwn| PgUp | End  |
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_ortho_4x12(
@@ -96,7 +96,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 | NULL | NULL | NULL | NULL |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      |      |      |      |             |      | Home | PgDwn| PgUp | End  |
+ * |      |      |      |      |      |      |      |      | Home | PgDwn| PgUp | End  |
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_ortho_4x12(
@@ -114,7 +114,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |LShift| NULL | NULL | NULL | NULL | NULL | NULL | NULL |ZoomOu|ZoomIn|Zoom 0| NULL |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | NULL | NULL |      | NULL | Vol- |     Mute    | Vol+ | Prev | Stop | Play | Next |
+ * | NULL | NULL |      | NULL | Vol- | Mute | Mute | Vol+ | Prev | Stop | Play | Next |
  * `-----------------------------------------------------------------------------------'
  */
 [_MEDIA] = LAYOUT_ortho_4x12(
@@ -132,7 +132,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      | NULL | NULL |AudOff|MusOff|QWERTY|NUMPAD|Mus On|Aud On| NULL | Null |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      | Reset|      |      |             |      |      |      |      |      |
+ * |      |      | Reset|      |      |      |      |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_FUNC] = LAYOUT_ortho_4x12(
@@ -150,7 +150,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |      | NULL | BKSP |   1  |   2  |   3  |  Ent |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      |      |      |      |             |      |   0  |   .  |   ,  |   =  |
+ * |      |      |      |      |      |      |      |      |   0  |   .  |   ,  |   =  |
  * `-----------------------------------------------------------------------------------'
  */
 [_NUMPAD] = LAYOUT_ortho_4x12(

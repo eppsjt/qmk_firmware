@@ -6,7 +6,7 @@ Build: make planck/rev6:eppsjt
 
 ### QWERTY
 
-- Super/GUI more closely matches Mac placement.
+- Super/GUI moved to space postion to reduce thumb strain on mac.
 - Left shift can tap dance into caps lock
 - Enter key changes to Shift when held down
 
